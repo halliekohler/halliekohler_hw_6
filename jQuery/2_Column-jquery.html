@@ -25,16 +25,11 @@
 			text-transform: uppercase;
 		}
 		
-		a {
+		h2 {
 			text-decoration: none;
 			color: #ffffff;
 			text-transform: uppercase;
 			text-align: center;
-		}
-
-	
-		a:hover{
-			opacity: 0.5;
 		}
 
 		.centering_wrapper {
@@ -102,17 +97,17 @@
 			<div class="centering_wrapper">			
 				<div class="right_column">	
 					<div class="article">
-			         <a href="article.html"><h2>Visit Knoxville</h2></a>
+			         <h2>Visit Knoxville</h2>
 			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maium sed, efficitur id magna. Proin at egestas enim, non elementum tortor. Suspendisse congue metus felis, vel tristique magna molestie sed. Proin porttitor tempor lacinia. Quisque et laoreet tortor, sed volutpat nisl. Sed eget nisl tincidunt, molestie erat vitae, auctor tortor. Fusce sed volutpat felis. Mauris tempus nibh eu diam dapibus eleifend.</p>
 			        </div>
 
 			        <div class="article">
-			        <a href="article.html"><h2>Jefferson Street</h2></a>
+			        <h2>Jefferson Street</h2>
 			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna nisl, maximus eget pretium sed, efficitur id magna. Proin at egestas enim, non elementum tortor. SuspendiQuisque et laoreet tortor, sed volutpat nisl. Sed eget nisl tincidunt, molestie erat vitae, auctor tois. Mauris tempus nibh eu diam dapibus eleifend.</p>
 			        </div>
 
 			        <div class="article">
-			         <a href="article.html"><h2>Coffee, Too!</h2></a>
+			         <h2>Coffee, Too!</h2>
 			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna nisl, maximus egegestas enim, non elementum tortor. Suspendisse congue metus felis, vel tristique magna molestie sed. Proin porttitor tempor lacinia. Quisque et laoreet tortor, sed volutpat nisl. Sed eget nisl tincidunt, molestie erat vitae, auctor tortor. Fusce sed volutpat felis. Mauris tempus nibh eu diam dapibus eleifend.</p>
 			        </div>			       
 			    </div>
@@ -165,6 +160,10 @@
 					    $(".footer").fadeOut(1000, function() {
 				        $(".footer").fadeIn(1000);
 				        });  
+					});
+
+					$(".article").click(function(){
+						alert("this is not a link!")
 					});
 
 				});
