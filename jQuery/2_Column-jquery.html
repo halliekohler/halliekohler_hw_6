@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+		body{
+			background-image: url("./background/IMG_0252.jpg");
+    		background-color: #cccccc;
+    		background-size: 100%;
+			font-family: georgia;
+			letter-spacing: 3px;
+			padding: 20px;
+		}
+
+		p{
+			font-size: 15px;
+			color: #ffffff;
+		}
+
+		h1{
+			text-align: center;
+			font-size: 50px;
+			color:#ffffff;
+			vertical-align: middle;
+			text-transform: uppercase;
+		}
+		
+		a {
+			text-decoration: none;
+			color: #ffffff;
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+	
+		a:hover{
+			opacity: 0.5;
+		}
+
+		.centering_wrapper {
+        	width: 100%;
+        	margin: 0 auto;
+      	}
+
+		.right_column{
+			background-color:#5C84A2;
+			float:right;
+			border-radius: 5px;
+			width:70%;
+			margin:2%;
+			padding: 2%;				
+		}
+		
+		.left_column{
+			background-color:#4C5154;
+			float:left; 
+			border-radius: 5px;
+			width:14%;
+			margin:2%;
+			padding: 2%;	
+		}
+
+		.bottomparagraph { 
+			clear: both;
+			border: 3px solid white; 
+			border-radius: 20px;
+			width: 92%;
+			height: 100px;
+			margin:2%;
+			padding: 2%;
+			text-transform: uppercase;
+			text-align: center;	
+			color:#FDF9F6;	
+		}
+
+		.footer{
+			background-color: #FDF9F6; 
+			clear: both;
+			border-radius: 20px;
+			width: 92%;
+			height: 70px;
+			margin:2%;
+			padding: 2%;
+			font-size: 50px;
+			font-weight: bold;
+			text-align: center;	
+			color:#4C5154;	
+		}
+
+        .box{
+			width:70px;
+			margin: 0 auto;
+		}
+
+		</style>
+	</head>
+
+	<body>	
+		<div class="title">
+			<h1> <img src = "./background/whee.png"></h1>		
+		</div>
+			<div class="centering_wrapper">			
+				<div class="right_column">	
+					<div class="article">
+			         <a href="article.html"><h2>Visit Knoxville</h2></a>
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maium sed, efficitur id magna. Proin at egestas enim, non elementum tortor. Suspendisse congue metus felis, vel tristique magna molestie sed. Proin porttitor tempor lacinia. Quisque et laoreet tortor, sed volutpat nisl. Sed eget nisl tincidunt, molestie erat vitae, auctor tortor. Fusce sed volutpat felis. Mauris tempus nibh eu diam dapibus eleifend.</p>
+			        </div>
+
+			        <div class="article">
+			        <a href="article.html"><h2>Jefferson Street</h2></a>
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna nisl, maximus eget pretium sed, efficitur id magna. Proin at egestas enim, non elementum tortor. SuspendiQuisque et laoreet tortor, sed volutpat nisl. Sed eget nisl tincidunt, molestie erat vitae, auctor tois. Mauris tempus nibh eu diam dapibus eleifend.</p>
+			        </div>
+
+			        <div class="article">
+			         <a href="article.html"><h2>Coffee, Too!</h2></a>
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna nisl, maximus egegestas enim, non elementum tortor. Suspendisse congue metus felis, vel tristique magna molestie sed. Proin porttitor tempor lacinia. Quisque et laoreet tortor, sed volutpat nisl. Sed eget nisl tincidunt, molestie erat vitae, auctor tortor. Fusce sed volutpat felis. Mauris tempus nibh eu diam dapibus eleifend.</p>
+			        </div>			       
+			    </div>
+
+			    <div class="left_column">
+			        <div class="box">
+			        	<a href="http://facebook.com" target="_blank"><img src="./social_icons/facebook.png" width="70px"></a>
+			        	<a href="http://instagram.com" target="_blank"><img src="./social_icons/instagram.png"  width="70px"></a>
+			        	<a href="http://google.com/mail" target="_blank"><img src="./social_icons/email.png" width="70px"></a>
+			        	<a href="http://twitter.com" target="_blank"><img src="./social_icons/twitter.png" width="70px"></a>
+			        	<a href="http://youtube.com" target="_blank"><img src="./social_icons/youtube.png" width="70px"></a>
+			        </div>
+			    </div>
+			    <div class = "bottomparagraph">
+			    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    </div>
+			    <div class="footer">
+				       Looky Here!
+			    </div>
+			</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+	</script>
+		<!-- ^ goes in its own script tags -->
+
+
+			<script>
+				$(document).ready (function() {
+					
+					$("h1").animate({
+						width: "50%",
+						opacity: 0.8
+					}, 3000);
+
+					$(".left_column").animate({
+							opacity: 0.5
+					}, 5000);
+
+					$("p").fadeOut(1000, function() {
+				        $("p").fadeIn(1000);
+				    });
+
+
+					$(".footer").hover(function() {
+					    $(".footer").fadeOut(1000, function() {
+				        $(".footer").fadeIn(1000);
+				        });  
+					});
+
+				});
+
+
+			</script>
+		</body>
+</html>
