@@ -56,6 +56,12 @@ $(document).ready()
 	//returned by a function
 	//assigned to a variable
 
+// my example from class:
+var x = function(){
+	return alert("hello");
+	}
+
+//examples from slides:
 function(){
   alert("I am anonymous!");
 }
@@ -73,13 +79,51 @@ var hello = function(){
 then runs that other function */
 
 function greetings(hello){ 
-	console.log(3-1); hello(); 
+	console.log(3-1); 
+	hello(); 
 }
 
 // Call the regular function, supplying the initial anonymous function as an argument
 greetings(hello);
 
 
+//my callbac example from class:
+var callback = function(){
+	alert("hellow world");
+
+}
+
+function runner(anotherTask) {
+	console.log(2+2);
+	anotherTask();
+}
 
 
+//Use jQuery:
 
+//showing and hiding
+$("body").hide();
+
+
+$("body").show();
+$("p").hide(3000);
+
+//animating
+$("h1").animate({
+	width: "50%",
+	opacity: 0.5
+}, 3000);
+
+//can only animate CSS attriutes with numbers as their property % must be in " "
+
+
+//click function
+$(".h1").click(function() {
+  alert("Hello World!");
+});
+
+//fade in, fade out
+$("div").fadeOut(1000, function() {
+  $("div").fadeIn(1000);
+});
+//number in purple is the time in milliseconds
